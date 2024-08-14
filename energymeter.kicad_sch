@@ -192,6 +192,145 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_02x09_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
@@ -3567,6 +3706,12 @@
 		)
 	)
 	(junction
+		(at 105.41 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "034101f0-b6f2-45b7-8bda-9a014cb224b7")
+	)
+	(junction
 		(at 140.97 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3591,12 +3736,6 @@
 		(uuid "1f941987-dbf7-4b22-bf8e-22dfab1f12d3")
 	)
 	(junction
-		(at 109.22 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "25438f38-2c0e-4e56-9da9-a5ef28042c36")
-	)
-	(junction
 		(at 140.97 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3609,12 +3748,6 @@
 		(uuid "4f22c7f2-1ecf-45ba-b41f-32c0157cf734")
 	)
 	(junction
-		(at 109.22 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "58e9e56b-44bf-4a1b-aa5a-8dd54b2874b8")
-	)
-	(junction
 		(at 240.03 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3625,6 +3758,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f18b75b-6e91-41a3-a2fc-fdae33e5a82f")
+	)
+	(junction
+		(at 255.27 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75cd9c8d-9cf7-45b7-b897-03bef5f3f95c")
 	)
 	(junction
 		(at 259.08 128.27)
@@ -3651,12 +3790,6 @@
 		(uuid "8e6c656e-7143-4e64-9a27-be9d9c9bf339")
 	)
 	(junction
-		(at 257.81 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97009b0b-6967-4aa3-86ad-b8b124ac4778")
-	)
-	(junction
 		(at 105.41 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3669,10 +3802,22 @@
 		(uuid "a62e05f7-ca8c-4984-9df4-0210f9964de4")
 	)
 	(junction
+		(at 259.08 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abb0c4bb-5e21-4e38-a088-ed6ce39e31d3")
+	)
+	(junction
 		(at 87.63 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "acc194f1-83a7-4371-be48-060b8531452b")
+	)
+	(junction
+		(at 255.27 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad520bb2-4e62-47ed-99d3-c4e2c418dda7")
 	)
 	(junction
 		(at 250.19 134.62)
@@ -4106,6 +4251,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 147.32) (xy 261.62 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b3dcfd-9dfe-4c82-b25b-9ee7fc0736ae")
+	)
+	(wire
+		(pts
 			(xy 123.19 55.88) (xy 123.19 39.37)
 		)
 		(stroke
@@ -4236,7 +4391,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 143.51) (xy 257.81 147.32)
+			(xy 261.62 143.51) (xy 261.62 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4283,6 +4438,16 @@
 			(type default)
 		)
 		(uuid "3ee25939-a760-466d-a9a4-0e2fb4e97e38")
+	)
+	(wire
+		(pts
+			(xy 255.27 134.62) (xy 259.08 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "402d210f-29e0-4fb0-9607-549466f9d6cf")
 	)
 	(wire
 		(pts
@@ -4466,16 +4631,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 68.58) (xy 109.22 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "535f065c-6d21-44f1-b3f4-c91bbb004f6f")
-	)
-	(wire
-		(pts
 			(xy 140.97 104.14) (xy 140.97 110.49)
 		)
 		(stroke
@@ -4486,7 +4641,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 147.32) (xy 257.81 147.32)
+			(xy 250.19 147.32) (xy 255.27 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4706,7 +4861,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 41.91) (xy 109.22 41.91)
+			(xy 105.41 41.91) (xy 120.65 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4956,6 +5111,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 71.12) (xy 105.41 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9644c955-0fec-4fe9-a087-736061c4d4e4")
+	)
+	(wire
+		(pts
 			(xy 116.84 158.75) (xy 116.84 166.37)
 		)
 		(stroke
@@ -4973,16 +5138,6 @@
 			(type default)
 		)
 		(uuid "9671833e-98b7-4236-87ff-6af58045c773")
-	)
-	(wire
-		(pts
-			(xy 109.22 68.58) (xy 110.49 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "968a6735-57b9-409a-8ed2-3b1ed1cec72c")
 	)
 	(wire
 		(pts
@@ -5016,7 +5171,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 134.62) (xy 257.81 134.62)
+			(xy 250.19 134.62) (xy 255.27 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5056,6 +5211,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 134.62) (xy 259.08 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99cb0904-903f-4011-9ead-581603f516d7")
+	)
+	(wire
+		(pts
 			(xy 201.93 52.07) (xy 205.74 52.07)
 		)
 		(stroke
@@ -5063,6 +5228,16 @@
 			(type default)
 		)
 		(uuid "99db4a76-0be1-45e1-acb0-5b4484fbd9b6")
+	)
+	(wire
+		(pts
+			(xy 255.27 134.62) (xy 255.27 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a46b78e-acdf-4f9e-8ef6-87b1fa4f9fab")
 	)
 	(wire
 		(pts
@@ -5106,7 +5281,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 135.89) (xy 257.81 134.62)
+			(xy 261.62 135.89) (xy 261.62 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5336,6 +5511,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 143.51) (xy 255.27 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c14f784b-a28e-46a9-ae90-e77dc22fb2a9")
+	)
+	(wire
+		(pts
 			(xy 27.94 99.06) (xy 27.94 100.33)
 		)
 		(stroke
@@ -5386,16 +5571,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 134.62) (xy 259.08 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6b723e9-dad0-4d40-aeed-c5e9c5735526")
-	)
-	(wire
-		(pts
 			(xy 162.56 154.94) (xy 162.56 153.67)
 		)
 		(stroke
@@ -5413,6 +5588,16 @@
 			(type default)
 		)
 		(uuid "c757c13e-d4ec-45e7-b363-8ce28e0d35fa")
+	)
+	(wire
+		(pts
+			(xy 93.98 71.12) (xy 85.09 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc10550d-3eaa-48c8-89a7-d1a2b2cdb8b3")
 	)
 	(wire
 		(pts
@@ -5526,7 +5711,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 68.58) (xy 109.22 68.58)
+			(xy 105.41 68.58) (xy 110.49 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5633,16 +5818,6 @@
 			(type default)
 		)
 		(uuid "e4f8c0e4-2612-4a84-b777-9337d8a7d57c")
-	)
-	(wire
-		(pts
-			(xy 109.22 41.91) (xy 120.65 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5bb8f7c-af86-4f98-aafd-d19245f2cd2b")
 	)
 	(wire
 		(pts
@@ -6856,6 +7031,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 143.51 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "energymeter"
 				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
@@ -6872,7 +7056,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "050de412-848d-4c55-a4f2-98d0161b61fb")
 		(property "Reference" "J14"
@@ -6910,6 +7094,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 82.55 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 82.55 167.64 0)
 			(effects
 				(font
@@ -7103,7 +7296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf"
 			(at 172.72 95.25 0)
 			(effects
 				(font
@@ -7113,6 +7306,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 172.72 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 172.72 95.25 0)
 			(effects
 				(font
@@ -7143,7 +7345,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0beeda7d-b9e3-435b-a0cb-1c49e0537c54")
 		(property "Reference" "T1"
@@ -7182,6 +7384,15 @@
 			)
 		)
 		(property "Description" "Current-type voltage transformer"
+			(at 121.92 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C125191"
 			(at 121.92 153.67 0)
 			(effects
 				(font
@@ -7312,7 +7523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "Elec-0603WAF2202T5E_C31850.pdf"
 			(at 111.76 153.67 0)
 			(effects
 				(font
@@ -7322,6 +7533,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 111.76 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31850"
 			(at 111.76 153.67 0)
 			(effects
 				(font
@@ -7363,7 +7583,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF/10V"
+		(property "Value" "100uF"
 			(at 244.856 143.256 0)
 			(effects
 				(font
@@ -7372,7 +7592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 251.1552 143.51 0)
 			(effects
 				(font
@@ -7381,7 +7601,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/-TAJB107K006RNJ/C16133"
 			(at 250.19 139.7 0)
 			(effects
 				(font
@@ -7390,7 +7610,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Tantilum capacitor"
+			(at 250.19 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16133"
 			(at 250.19 139.7 0)
 			(effects
 				(font
@@ -7415,7 +7644,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7439,7 +7668,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 99.06 0)
 			(effects
 				(font
@@ -7457,7 +7686,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 99.06 0)
 			(effects
 				(font
@@ -7517,7 +7755,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF0000T5E_C21189.pdf"
 			(at 120.65 45.72 0)
 			(effects
 				(font
@@ -7532,6 +7770,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C21189"
+			(at 120.65 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7604,6 +7851,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 105.41 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "energymeter"
 				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
@@ -7614,7 +7870,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 152.4 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7639,7 +7895,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 152.4 0)
 			(effects
 				(font
@@ -7657,7 +7913,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 152.4 0)
 			(effects
 				(font
@@ -7682,7 +7947,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7707,7 +7972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 27.94 0)
 			(effects
 				(font
@@ -7725,7 +7990,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 27.94 0)
 			(effects
 				(font
@@ -7786,7 +8060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1000T5E_C22775.pdf"
 			(at 140.97 153.67 0)
 			(effects
 				(font
@@ -7796,6 +8070,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 140.97 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22775"
 			(at 140.97 153.67 0)
 			(effects
 				(font
@@ -7820,7 +8103,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 116.84 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7845,7 +8128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 116.84 0)
 			(effects
 				(font
@@ -7863,7 +8146,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 116.84 0)
 			(effects
 				(font
@@ -8085,7 +8377,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 170.18 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8110,7 +8402,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 170.18 0)
 			(effects
 				(font
@@ -8128,7 +8420,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 170.18 0)
 			(effects
 				(font
@@ -8153,7 +8454,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8178,7 +8479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 63.5 0)
 			(effects
 				(font
@@ -8196,7 +8497,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 63.5 0)
 			(effects
 				(font
@@ -8273,7 +8583,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C61063"
+		(property "LCSC" "C61063"
 			(at 217.17 137.16 0)
 			(effects
 				(font
@@ -8350,7 +8660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf"
 			(at 97.79 68.58 0)
 			(effects
 				(font
@@ -8360,6 +8670,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 97.79 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14858"
 			(at 97.79 68.58 0)
 			(effects
 				(font
@@ -8484,7 +8803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf"
 			(at 179.07 91.44 0)
 			(effects
 				(font
@@ -8494,6 +8813,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22975"
 			(at 179.07 91.44 0)
 			(effects
 				(font
@@ -8620,7 +8948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf"
 			(at 218.44 91.44 0)
 			(effects
 				(font
@@ -8630,6 +8958,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 218.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14858"
 			(at 218.44 91.44 0)
 			(effects
 				(font
@@ -8690,7 +9027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf"
 			(at 120.65 121.92 0)
 			(effects
 				(font
@@ -8700,6 +9037,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 120.65 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14858"
 			(at 120.65 121.92 0)
 			(effects
 				(font
@@ -8730,7 +9076,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "628df3a6-68bd-450f-9e01-fdd12b8f35c1")
 		(property "Reference" "J11"
@@ -8758,7 +9104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 82.55 154.94 0)
 			(effects
 				(font
@@ -8768,6 +9114,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 82.55 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 82.55 154.94 0)
 			(effects
 				(font
@@ -8825,7 +9180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf"
 			(at 148.59 162.56 0)
 			(effects
 				(font
@@ -8835,6 +9190,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 148.59 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 148.59 162.56 0)
 			(effects
 				(font
@@ -8859,7 +9223,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 187.96 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8884,7 +9248,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 187.96 0)
 			(effects
 				(font
@@ -8902,7 +9266,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 187.96 0)
 			(effects
 				(font
@@ -8987,6 +9360,84 @@
 			(project "energymeter"
 				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 255.27 139.7 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "7a18dd24-74c6-489d-99aa-79c2d3467aed")
+		(property "Reference" "C31"
+			(at 259.08 137.5409 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF"
+			(at 249.936 143.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+			(at 256.2352 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/-TAJB107K006RNJ/C16133"
+			(at 255.27 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 255.27 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16133"
+			(at 255.27 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9788d7ff-e4aa-427e-99cf-85cfc3a90826")
+		)
+		(pin "1"
+			(uuid "c3fe504c-245e-4ddc-9c54-10f310143099")
+		)
+		(instances
+			(project "energymeter"
+				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -9093,7 +9544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "Elec-0603WAF2202T5E_C31850.pdf"
 			(at 102.87 153.67 0)
 			(effects
 				(font
@@ -9103,6 +9554,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 102.87 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31850"
 			(at 102.87 153.67 0)
 			(effects
 				(font
@@ -9133,7 +9593,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8e152208-e03d-4a27-83ed-9aa0ca157769")
 		(property "Reference" "J13"
 			(at 255.27 33.02 0)
@@ -9175,6 +9635,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" ""
+			(at 254 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "7"
@@ -9274,7 +9743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "Elec-0603WAF2202T5E_C31850.pdf"
 			(at 99.06 148.59 0)
 			(effects
 				(font
@@ -9284,6 +9753,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 99.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31850"
 			(at 99.06 148.59 0)
 			(effects
 				(font
@@ -9341,7 +9819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "Elec-0603WAF2202T5E_C31850.pdf"
 			(at 107.95 148.59 0)
 			(effects
 				(font
@@ -9351,6 +9829,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 107.95 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31850"
 			(at 107.95 148.59 0)
 			(effects
 				(font
@@ -9375,13 +9862,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 97.79 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9664a545-4272-4aea-ad51-35a7f3f02576")
+		(property "Reference" "C32"
+			(at 97.79 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 97.79 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 101.6 70.1548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14858"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc8e7eac-f207-4717-8fe8-825b1118bcb6")
+		)
+		(pin "2"
+			(uuid "3a849c70-f2cc-4411-bdd8-13427f60fa4c")
+		)
+		(instances
+			(project "energymeter"
+				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "bl-0910:BL0910")
 		(at 133.35 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "96e816a2-500e-4dd9-b104-034517b1de0f")
 		(property "Reference" "U1"
@@ -9420,6 +9984,15 @@
 		)
 		(property "Description" ""
 			(at 133.096 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 133.35 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9581,7 +10154,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 81.28 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9606,7 +10179,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 81.28 0)
 			(effects
 				(font
@@ -9624,7 +10197,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 81.28 0)
 			(effects
 				(font
@@ -9781,7 +10363,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 134.62 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9806,7 +10388,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 134.62 0)
 			(effects
 				(font
@@ -9824,7 +10406,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 134.62 0)
 			(effects
 				(font
@@ -9903,6 +10494,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 85.09 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project ""
 				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
@@ -9957,6 +10557,15 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 232.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C6186"
 			(at 232.41 87.63 0)
 			(effects
 				(font
@@ -10020,7 +10629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf"
 			(at 243.84 91.44 0)
 			(effects
 				(font
@@ -10030,6 +10639,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 243.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C59461"
 			(at 243.84 91.44 0)
 			(effects
 				(font
@@ -10060,7 +10678,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c78c9a55-9214-4913-9747-42fb7c790fb4")
 		(property "Reference" "J12"
 			(at 212.09 33.02 0)
@@ -10102,6 +10720,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" ""
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "7"
@@ -10213,6 +10840,15 @@
 			)
 		)
 		(property "Description" "60V 3A Schottky Diode, SMA"
+			(at 231.14 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 231.14 138.43 0)
 			(effects
 				(font
@@ -10357,6 +10993,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 124.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "energymeter"
 				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
@@ -10401,7 +11046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf"
 			(at 148.59 144.78 0)
 			(effects
 				(font
@@ -10411,6 +11056,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 148.59 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 148.59 144.78 0)
 			(effects
 				(font
@@ -10471,7 +11125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10B333KB8NNNC_C21117.pdf"
 			(at 162.56 148.59 0)
 			(effects
 				(font
@@ -10481,6 +11135,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 162.56 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21117"
 			(at 162.56 148.59 0)
 			(effects
 				(font
@@ -10505,7 +11168,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 22.86 45.72 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10530,7 +11193,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 22.86 45.72 0)
 			(effects
 				(font
@@ -10548,7 +11211,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C265283"
 			(at 22.86 45.72 0)
 			(effects
 				(font
@@ -10609,7 +11281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf"
 			(at 123.19 35.56 0)
 			(effects
 				(font
@@ -10619,6 +11291,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 123.19 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14858"
 			(at 123.19 35.56 0)
 			(effects
 				(font
@@ -10709,6 +11390,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 85.09 71.12 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc3da43f-f23d-477d-963b-eed9f0a71d89")
+		(property "Reference" "#PWR039"
+			(at 78.74 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 71.1199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9da46251-ed73-4151-9478-1eca16bbff36")
+		)
+		(instances
+			(project "energymeter"
+				(path "/d5c3d4dc-7952-499c-ae9a-397827d02ad2"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 93.98 153.67 270)
 		(unit 1)
@@ -10743,7 +11491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "Elec-0603WAF2202T5E_C31850.pdf"
 			(at 93.98 153.67 0)
 			(effects
 				(font
@@ -10753,6 +11501,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 93.98 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31850"
 			(at 93.98 153.67 0)
 			(effects
 				(font
@@ -10813,7 +11570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10B333KB8NNNC_C21117.pdf"
 			(at 162.56 158.75 0)
 			(effects
 				(font
@@ -10823,6 +11580,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 162.56 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21117"
 			(at 162.56 158.75 0)
 			(effects
 				(font
@@ -10956,6 +11722,15 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 242.57 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 242.57 134.62 0)
 			(effects
 				(font
@@ -11178,7 +11953,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 257.81 139.7 0)
+		(at 261.62 139.7 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -11187,7 +11962,7 @@
 		(fields_autoplaced yes)
 		(uuid "f707c000-d136-4763-9046-4b5e668c68e5")
 		(property "Reference" "C22"
-			(at 261.62 138.4299 0)
+			(at 265.43 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11196,7 +11971,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 261.62 140.9699 0)
+			(at 265.43 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11205,7 +11980,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 258.7752 143.51 0)
+			(at 262.5852 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11213,8 +11988,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 257.81 139.7 0)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf"
+			(at 261.62 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11223,7 +11998,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 257.81 139.7 0)
+			(at 261.62 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14858"
+			(at 261.62 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)

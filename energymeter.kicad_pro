@@ -524,7 +524,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -548,7 +548,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -566,10 +566,10 @@
           "show": false
         },
         {
-          "group_by": false,
-          "label": "JLCPCB",
-          "name": "JLCPCB",
-          "show": false
+          "group_by": true,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
         }
       ],
       "filter_string": "",
