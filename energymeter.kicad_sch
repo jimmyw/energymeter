@@ -331,7 +331,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_02x09_Odd_Even"
+		(symbol "Connector_Generic:Conn_02x10_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -345,8 +345,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x09_Odd_Even"
-				(at 1.27 -12.7 0)
+			(property "Value" "Conn_02x10_Odd_Even"
+				(at 1.27 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -371,7 +371,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x09, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -398,7 +398,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x09_Odd_Even_1_1"
+			(symbol "Conn_02x10_Odd_Even_1_1"
+				(rectangle
+					(start -1.27 -12.573)
+					(end 0 -12.827)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -1.27 -10.033)
 					(end 0 -10.287)
@@ -500,13 +511,24 @@
 				)
 				(rectangle
 					(start -1.27 11.43)
-					(end 3.81 -11.43)
+					(end 3.81 -13.97)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start 3.81 -12.573)
+					(end 2.54 -12.827)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(rectangle
@@ -789,6 +811,24 @@
 					)
 				)
 				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 3.81)
+					(name "Pin_19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 7.62 10.16 180)
 					(length 3.81)
 					(name "Pin_2"
@@ -799,6 +839,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -12.7 180)
+					(length 3.81)
+					(name "Pin_20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3352,8 +3410,24 @@
 		(uuid "a802e9d6-4b1d-4794-a62a-8ee15fae375f")
 	)
 	(no_connect
+		(at 218.44 62.23)
+		(uuid "b15bb342-d658-41b6-a3c2-dd63307c2ed6")
+	)
+	(no_connect
+		(at 248.92 62.23)
+		(uuid "c1f8d1ca-60fd-49de-bf6f-9b9c7217a5d5")
+	)
+	(no_connect
+		(at 261.62 62.23)
+		(uuid "c3840a61-579f-4b6d-a700-3574bde9b8e6")
+	)
+	(no_connect
 		(at 146.05 55.88)
 		(uuid "c97ed390-ea8d-4a1e-bcd0-851388135928")
+	)
+	(no_connect
+		(at 205.74 62.23)
+		(uuid "f2654b44-c3e9-4469-b416-7f19b0a13f6b")
 	)
 	(no_connect
 		(at 128.27 55.88)
@@ -6372,7 +6446,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C128027"
 			(at 82.55 167.64 0)
 			(effects
 				(font
@@ -6839,8 +6913,8 @@
 		(lib_id "Device:C_Polarized")
 		(at 226.06 137.16 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "11ff70e5-57ac-4d52-97f4-0a927c5f3d21")
@@ -8231,7 +8305,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C128027"
 			(at 82.55 154.94 0)
 			(effects
 				(font
@@ -8478,8 +8552,8 @@
 		(lib_id "Device:C_Polarized")
 		(at 233.68 137.16 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7a18dd24-74c6-489d-99aa-79c2d3467aed")
@@ -8762,7 +8836,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x09_Odd_Even")
+		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
 		(at 254 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8778,7 +8852,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x09_Odd_Even"
+		(property "Value" "Conn_02x10_Odd_Even"
 			(at 255.27 35.56 0)
 			(effects
 				(font
@@ -8786,7 +8860,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
 			(at 254 49.53 0)
 			(effects
 				(font
@@ -8805,14 +8879,14 @@
 			)
 		)
 		(property "Description" "DaisyChain OUT"
-			(at 255.016 62.992 0)
+			(at 255.27 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C239361"
 			(at 254 49.53 0)
 			(effects
 				(font
@@ -8874,6 +8948,12 @@
 		)
 		(pin "5"
 			(uuid "09c9b38e-aff5-44f9-808c-f324b9d8c698")
+		)
+		(pin "19"
+			(uuid "d294afa6-5e66-4a29-a47b-5ff503877c6b")
+		)
+		(pin "20"
+			(uuid "5e3924cb-1641-4291-b561-eaaa281aa0c0")
 		)
 		(instances
 			(project "energymeter"
@@ -9166,7 +9246,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2841006"
 			(at 133.35 80.01 0)
 			(effects
 				(font
@@ -9781,7 +9861,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x09_Odd_Even")
+		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
 		(at 210.82 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9797,7 +9877,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x09_Odd_Even"
+		(property "Value" "Conn_02x10_Odd_Even"
 			(at 212.09 35.56 0)
 			(effects
 				(font
@@ -9805,7 +9885,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
 			(at 210.82 49.53 0)
 			(effects
 				(font
@@ -9824,14 +9904,14 @@
 			)
 		)
 		(property "Description" "DaisyChain IN"
-			(at 211.582 63.5 0)
+			(at 211.836 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5454488"
 			(at 210.82 49.53 0)
 			(effects
 				(font
@@ -9893,6 +9973,12 @@
 		)
 		(pin "5"
 			(uuid "348dfb70-3a14-444b-afe9-d93cf19b3131")
+		)
+		(pin "19"
+			(uuid "605f1016-95cc-4333-929a-52285936d441")
+		)
+		(pin "20"
+			(uuid "5a217b0b-b6d0-4413-bd56-41a6b613775e")
 		)
 		(instances
 			(project ""
