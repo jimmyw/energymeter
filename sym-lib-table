@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "bl-0910")(type "KiCad")(uri "${KIPRJMOD}/bl-0910.kicad_sym")(options "")(descr ""))
+  (lib (name "MAS_Transformers")(type "KiCad")(uri "${KIPRJMOD}/MAS_Transformers.kicad_sym")(options "")(descr ""))
+)

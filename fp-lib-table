@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MAS_Package_nostd")(type "KiCad")(uri "${KIPRJMOD}/MAS_Package_nostd.pretty")(options "")(descr ""))
+)
