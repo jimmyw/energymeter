@@ -5463,6 +5463,16 @@
 		)
 		(uuid "7ffa8f07-515e-4b2c-a2b5-7af1dcd1a9f9")
 	)
+	(text "U2 = (U1 / R') * R\nU2 = (230 / (22K * 5)) * 100\nU2 = 0.209V RMS, 0.295V Vpeak\nLimit is +-0.7V Vpeak\n"
+		(exclude_from_sim no)
+		(at 128.778 169.418 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "846582cc-a639-49c2-8dd1-6de207197dad")
+	)
 	(text "BL0910 Ten channel power metering"
 		(exclude_from_sim no)
 		(at 135.89 19.304 0)
