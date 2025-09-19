@@ -1,0 +1,466 @@
+esphome:
+  name: bl0910
+  platformio_options:
+    board_build.flash_mode: dio
+
+esp32:
+  #board: esp32-s3-devkitc-1
+  board: lolin32
+  #flash_size: 8MB
+
+  framework:
+    type: esp-idf
+    version: recommended
+    sdkconfig_options:
+      ESP_TASK_WDT_INIT: "n"
+      CONFIG_ESP_TASK_WDT_INIT: "n"
+      CONFIG_ESP_TASK_WDT_TIMEOUT_S: "3600"
+      ESP_TASK_WDT_TIMEOUT_S: "3600"
+
+external_components:
+  - source: github://dentra/esphome-components
+    # we need additional partitions component here
+    components: [coredump, partitions]
+
+#coredump:
+
+wifi:
+  ssid: "WIFI"
+  password: "PASSWORD"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+#  ap:
+#    ssid: "BL0910 Fallback Hotspot"
+#    password: "rnKi2fnCRGfQ"
+
+# Enable logging
+logger:
+  hardware_uart: UART0
+  level: INFO
+
+# Enable Home Assistant API
+api:
+
+ota:
+  platform: esphome
+
+#web_server:
+#  port: 80
+
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO23
+  miso_pin: GPIO19
+
+# Example reference values values
+# All magic values are calculated from the BL0910 app note:
+# https://www.belling.com.cn/media/file_object/bel_product/BL0910/datasheet/BL0910%20APP%20Note_V1.02.pdf
+
+# Example 1: Plugging values from the app note into the formulas:
+# BURDEN1 = (5.1 + 5.1)
+# BURDEN2 = 100.0
+# BURDEN3 = 100.0
+# CT_TURNS = 2000.0
+
+# Example 2: https://github.com/jimmyw/energymeter/blob/main/energymeter.pdf
+# BURDEN1 = 10.2 ohm(R2 + R3)
+# BURDEN2 = 100.0 ohm (R68)
+# BURDEN3 = 110.0 kohm (R63 + R64 + R65 + R66 + R67)
+# CT_TURNS = 3000.0
+
+# Example 3: https://github.com/JustNoot/10CH-Energy-Meter/blob/main/Schematic_10ch_power_meter_2024-05-11.pdf
+# BURDEN1 = 33 ohm (R2)
+# BURDEN2 = 120.0 ohm (R33)
+# BURDEN3 = 132.0 kohm (R36 + R37 + R38 + R39 + R40 + R41)
+# CT_TURNS = 2000.0
+
+# Note, Some CT clamps have additional resistors in series with the burden resistor, so you need to add those to the burden resistor value.
+
+# Calculate the reference values from the app note magic values:
+# IREF = (12875.0 * BURDEN1) / (1.097 * CT_TURNS / 1000.0)
+# UREF = (13162.0 * BURDEN2) / (1.097 * BURDEN3)
+# PREF = (40.4125 * BURDEN1 * BURDEN2 * 1000.0 / CT_TURNS) / (1.097 * 1.097 * BURDEN3)
+# EREF = (3600000.0 * 16.0 * PREF) / (4194304.0 * 0.032768 * 16.0)
+
+sensor:
+  - platform: bl0910
+    update_interval: 250ms
+    cs_pin: GPIO21
+
+    # In mode 0, channel 11 is the voltage reference
+    voltage_11:
+      name: BL0910 RMS Voltage A
+      voltage_reference: 10907.433
+
+    current_1:
+      name: BL0910 Current 1A
+      current_reference: 59856.427
+    current_2:
+      name: BL0910 Current 2A
+      current_reference: 59856.427
+    current_3:
+      name: BL0910 Current 3A
+      current_reference: 59856.427
+    current_4:
+      name: BL0910 Current 4A
+      current_reference: 59856.427
+    current_5:
+      name: BL0910 Current 5A
+      current_reference: 59856.427
+    current_6:
+      name: BL0910 Current 6A
+      current_reference: 59856.427
+    current_7:
+      name: BL0910 Current 7A
+      current_reference: 59856.427
+    current_8:
+      name: BL0910 Current 8A
+      current_reference: 59856.427
+    current_9:
+      name: BL0910 Current 9A
+      current_reference: 59856.427
+    current_10:
+      name: BL0910 Current 10A
+      current_reference: 59856.427
+
+    active_power_1:
+      name: BL0910 Active Power 1A
+      power_reference: 155.697
+    active_power_2:
+      name: BL0910 Active Power 2A
+      power_reference: 155.697
+    active_power_3:
+      name: BL0910 Active Power 3A
+      power_reference: 155.697
+    active_power_4:
+      name: BL0910 Active Power 4A
+      power_reference: 155.697
+    active_power_5:
+      name: BL0910 Active Power 5A
+      power_reference: 155.697
+    active_power_6:
+      name: BL0910 Active Power 6A
+      power_reference: 155.697
+    active_power_7:
+      name: BL0910 Active Power 7A
+      power_reference: 155.697
+    active_power_8:
+      name: BL0910 Active Power 8A
+      power_reference: 155.697
+    active_power_9:
+      name: BL0910 Active Power 9A
+      power_reference: 155.697
+    active_power_10:
+      name: BL0910 Active Power 10A
+      power_reference: 155.697
+
+    energy_1:
+      name: BL0910 Energy 1A
+      energy_reference: 4078.238
+    energy_2:
+      name: BL0910 Energy 2A
+      energy_reference: 4078.238
+    energy_3:
+      name: BL0910 Energy 3A
+      energy_reference: 4078.238
+    energy_4:
+      name: BL0910 Energy 4A
+      energy_reference: 4078.238
+    energy_5:
+      name: BL0910 Energy 5A
+      energy_reference: 4078.238
+    energy_6:
+      name: BL0910 Energy 6A
+      energy_reference: 4078.238
+    energy_7:
+      name: BL0910 Energy 7A
+      energy_reference: 4078.238
+    energy_8:
+      name: BL0910 Energy 8A
+      energy_reference: 4078.238
+    energy_9:
+      name: BL0910 Energy 9A
+      energy_reference: 4078.238
+    energy_10:
+      name: BL0910 Energy 10A
+      energy_reference: 4078.238
+
+    power_factor_1:
+      name: BL0910 PowerFactor 1A
+    power_factor_2:
+      name: BL0910 PowerFactor 2A
+    power_factor_3:
+      name: BL0910 PowerFactor 3A
+    power_factor_4:
+      name: BL0910 PowerFactor 4A
+    power_factor_5:
+      name: BL0910 PowerFactor 5A
+    power_factor_6:
+      name: BL0910 PowerFactor 6A
+    power_factor_7:
+      name: BL0910 PowerFactor 7A
+    power_factor_8:
+      name: BL0910 PowerFactor 8A
+    power_factor_9:
+      name: BL0910 PowerFactor 9A
+    power_factor_10:
+      name: BL0910 PowerFactor 10A
+
+    frequency:
+      name: BL0910 Frequency A
+    temperature:
+      name: BL0910 Temperature A
+
+  - platform: bl0910
+    update_interval: 250ms
+    cs_pin: GPIO32
+
+    # In mode 0, channel 11 is the voltage reference
+    voltage_11:
+      name: BL0910 RMS Voltage B
+      voltage_reference: 10858.079
+    current_1:
+      name: BL0910 Current 1B
+      current_reference: 59856.427
+    current_2:
+      name: BL0910 Current 2B
+      current_reference: 59856.427
+    current_3:
+      name: BL0910 Current 3B
+      current_reference: 59856.427
+    current_4:
+      name: BL0910 Current 4B
+      current_reference: 59856.427
+    current_5:
+      name: BL0910 Current 5B
+      current_reference: 59856.427
+    current_6:
+      name: BL0910 Current 6B
+      current_reference: 59856.427
+    current_7:
+      name: BL0910 Current 7B
+      current_reference: 59856.427
+    current_8:
+      name: BL0910 Current 8B
+      current_reference: 59856.427
+    current_9:
+      name: BL0910 Current 9B
+      current_reference: 59856.427
+    current_10:
+      name: BL0910 Current 10B
+      current_reference: 59856.427
+
+    active_power_1:
+      name: BL0910 Active Power 1B
+      power_reference: 154.992
+    active_power_2:
+      name: BL0910 Active Power 2B
+      power_reference: 154.992
+    active_power_3:
+      name: BL0910 Active Power 3B
+      power_reference: 154.992
+    active_power_4:
+      name: BL0910 Active Power 4B
+      power_reference: 154.992
+    active_power_5:
+      name: BL0910 Active Power 5B
+      power_reference: 154.992
+    active_power_6:
+      name: BL0910 Active Power 6B
+      power_reference: 154.992
+    active_power_7:
+      name: BL0910 Active Power 7B
+      power_reference: 154.992
+    active_power_8:
+      name: BL0910 Active Power 8B
+      power_reference: 154.992
+    active_power_9:
+      name: BL0910 Active Power 9B
+      power_reference: 154.992
+    active_power_10:
+      name: BL0910 Active Power 10B
+      power_reference: 154.992
+
+    energy_1:
+      name: BL0910 Energy 1B
+      energy_reference: 4059.785
+    energy_2:
+      name: BL0910 Energy 2B
+      energy_reference: 4059.785
+    energy_3:
+      name: BL0910 Energy 3B
+      energy_reference: 4059.785
+    energy_4:
+      name: BL0910 Energy 4B
+      energy_reference: 4059.785
+    energy_5:
+      name: BL0910 Energy 5B
+      energy_reference: 4059.785
+    energy_6:
+      name: BL0910 Energy 6B
+      energy_reference: 4059.785
+    energy_7:
+      name: BL0910 Energy 7B
+      energy_reference: 4059.785
+    energy_8:
+      name: BL0910 Energy 8B
+      energy_reference: 4059.785
+    energy_9:
+      name: BL0910 Energy 9B
+      energy_reference: 4059.785
+    energy_10:
+      name: BL0910 Energy 10B
+      energy_reference: 4059.785
+
+    power_factor_1:
+      name: BL0910 PowerFactor 1B
+    power_factor_2:
+      name: BL0910 PowerFactor 2B
+    power_factor_3:
+      name: BL0910 PowerFactor 3B
+    power_factor_4:
+      name: BL0910 PowerFactor 4B
+    power_factor_5:
+      name: BL0910 PowerFactor 5B
+    power_factor_6:
+      name: BL0910 PowerFactor 6B
+    power_factor_7:
+      name: BL0910 PowerFactor 7B
+    power_factor_8:
+      name: BL0910 PowerFactor 8B
+    power_factor_9:
+      name: BL0910 PowerFactor 9B
+    power_factor_10:
+      name: BL0910 PowerFactor 10B
+
+    frequency:
+      name: BL0910 Frequency B
+    temperature:
+      name: BL0910 Temperature B
+
+  - platform: bl0910
+    update_interval: 250ms
+    cs_pin: GPIO33
+
+    # In mode 0, channel 11 is the voltage reference
+    voltage_11:
+      name: BL0910 RMS Voltage C
+      voltage_reference: 10887.638
+    current_1:
+      name: BL0910 Current 1C
+      current_reference: 59856.427
+    current_2:
+      name: BL0910 Current 2C
+      current_reference: 59856.427
+    current_3:
+      name: BL0910 Current 3C
+      current_reference: 59856.427
+    current_4:
+      name: BL0910 Current 4C
+      current_reference: 59856.427
+    current_5:
+      name: BL0910 Current 5C
+      current_reference: 59856.427
+    current_6:
+      name: BL0910 Current 6C
+      current_reference: 59856.427
+    current_7:
+      name: BL0910 Current 7C
+      current_reference: 59856.427
+    current_8:
+      name: BL0910 Current 8C
+      current_reference: 59856.427
+    current_9:
+      name: BL0910 Current 9C
+      current_reference: 59856.427
+    current_10:
+      name: BL0910 Current 10C
+      current_reference: 59856.427
+
+    active_power_1:
+      name: BL0910 Active Power 1C
+      power_reference: 155.414
+    active_power_2:
+      name: BL0910 Active Power 2C
+      power_reference: 155.414
+    active_power_3:
+      name: BL0910 Active Power 3C
+      power_reference: 155.414
+    active_power_4:
+      name: BL0910 Active Power 4C
+      power_reference: 155.414
+    active_power_5:
+      name: BL0910 Active Power 5C
+      power_reference: 155.414
+    active_power_6:
+      name: BL0910 Active Power 6C
+      power_reference: 155.414
+    active_power_7:
+      name: BL0910 Active Power 7C
+      power_reference: 155.414
+    active_power_8:
+      name: BL0910 Active Power 8C
+      power_reference: 155.414
+    active_power_9:
+      name: BL0910 Active Power 9C
+      power_reference: 155.414
+    active_power_10:
+      name: BL0910 Active Power 10C
+      power_reference: 155.414
+
+    energy_1:
+      name: BL0910 Energy 1C
+      energy_reference: 4070.837
+    energy_2:
+      name: BL0910 Energy 2C
+      energy_reference: 4070.837
+    energy_3:
+      name: BL0910 Energy 3C
+      energy_reference: 4070.837
+    energy_4:
+      name: BL0910 Energy 4C
+      energy_reference: 4070.837
+    energy_5:
+      name: BL0910 Energy 5C
+      energy_reference: 4070.837
+    energy_6:
+      name: BL0910 Energy 6C
+      energy_reference: 4070.837
+    energy_7:
+      name: BL0910 Energy 7C
+      energy_reference: 4070.837
+    energy_8:
+      name: BL0910 Energy 8C
+      energy_reference: 4070.837
+    energy_9:
+      name: BL0910 Energy 9C
+      energy_reference: 4070.837
+    energy_10:
+      name: BL0910 Energy 10C
+      energy_reference: 4070.837
+
+    power_factor_1:
+      name: BL0910 PowerFactor 1C
+    power_factor_2:
+      name: BL0910 PowerFactor 2C
+    power_factor_3:
+      name: BL0910 PowerFactor 3C
+    power_factor_4:
+      name: BL0910 PowerFactor 4C
+    power_factor_5:
+      name: BL0910 PowerFactor 5C
+    power_factor_6:
+      name: BL0910 PowerFactor 6C
+    power_factor_7:
+      name: BL0910 PowerFactor 7C
+    power_factor_8:
+      name: BL0910 PowerFactor 8C
+    power_factor_9:
+      name: BL0910 PowerFactor 9C
+    power_factor_10:
+      name: BL0910 PowerFactor 10C
+
+    frequency:
+      name: BL0910 Frequency C
+    temperature:
+      name: BL0910 Temperature C
